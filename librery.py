@@ -81,6 +81,10 @@ def encontrar_titulo(objetos_Librery: list[Librery], palabra: str) -> list[Libre
     palabra = palabra.lower()
     return [objeto for objeto in objetos_Librery if palabra in objeto.title.lower()]
 
+
+  #esta parte del codigo es por gusto personal, no es necesario para el funcionamiento del programa
+    # 5. Pruebas de Guardado en CSV
+    
 def guardar_en_csv(items: list[Librery], path: str = "Librery.csv"):
     
     with open(path, 'w', encoding='utf-8', newline='') as file:

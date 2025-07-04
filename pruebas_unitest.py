@@ -115,6 +115,9 @@ libro,Título Inválido,no_es_numero,Autor,200"""
         self.assertEqual(resultados[0].title, "EL HOBBIT")
         self.assertEqual(resultados[1].title, "el País Semanal")
 
+
+   #esta parte del codigo es por gusto personal, no es necesario para el funcionamiento del programa
+    # 5. Pruebas de Guardado en CSV
     def test_guardar_csv(self):
         """Debería guardar libros específicos en CSV sin errores"""
         items = [
