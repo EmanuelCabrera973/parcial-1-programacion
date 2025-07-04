@@ -79,7 +79,7 @@ libro,Título Inválido,no_es_numero,Autor,200"""
 
     # 4. Pruebas de Funciones de Reporte
     def test_checkout_multiple(self):
-        """Debería generar mensajes para todos los ítems"""
+        """genera mensajes para todos los ítems"""
         items = [
             Libro("Ficciones", 1, "Borges", 200),
             Revista("Literatura Hoy", 2, 42)
@@ -91,7 +91,7 @@ libro,Título Inválido,no_es_numero,Autor,200"""
         self.assertIn("Luisa", mensajes[1])
 
     def test_contador_objetos(self):
-        """Debería contar correctamente libros y revistas"""
+        """cuenta correctamente libros y revistas"""
         items = [
             Libro("L1", 1, "A1", 100),
             Revista("R1", 2, 1),
@@ -103,7 +103,7 @@ libro,Título Inválido,no_es_numero,Autor,200"""
         self.assertEqual(conteo, {"libro": 2, "revista": 2})
 
     def test_busqueda_titulo(self):
-        """Debería encontrar títulos sin importar mayúsculas"""
+        """encuentra títulos sin importar mayúsculas"""
         items = [
             Libro("48 Leyes del Poder", 1, "Robert Greene", 480),
             Revista("phyton para todos", 2, 1000),
@@ -119,7 +119,7 @@ libro,Título Inválido,no_es_numero,Autor,200"""
    #esta parte del codigo es por gusto personal, no es necesario para el funcionamiento del programa
     # 5. Pruebas de Guardado en CSV
     def test_guardar_csv(self):
-        """Debería guardar libros específicos en CSV sin errores"""
+        """guarda libros específicos en CSV sin errores"""
         items = [
             Libro("48 Leyes del Poder", 1, "Robert Greene", 480),
             Libro("El Arte de la Guerra", 2, "Sun Tzu", 272),
