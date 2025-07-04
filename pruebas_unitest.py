@@ -105,9 +105,9 @@ libro,Título Inválido,no_es_numero,Autor,200"""
     def test_busqueda_titulo(self):
         """Debería encontrar títulos sin importar mayúsculas"""
         items = [
-            Libro("EL HOBBIT", 1, "Tolkien", 310),
-            Revista("el País Semanal", 2, 1000),
-            Libro("Cien años de soledad", 3, "García Márquez", 432)
+            Libro("48 Leyes del Poder", 1, "Robert Greene", 480),
+            Revista("phyton para todos", 2, 1000),
+            Libro("vivr para contarla", 3, "García Márquez", 432)
         ]
         resultados = encontrar_titulo(items, "el")
         
